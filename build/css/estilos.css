@@ -1,0 +1,194 @@
+:root {
+    --color-azul-claro:     #5DADE2;
+    --color-blanco:         #FFFFFF;
+    --color-gris-verdoso:   #2C3E50;
+    --color-gris:           #779394;
+    --color-verde-azul:     #065f7f;
+    --color-verde-oscuro:   #10af92;
+    --color-verde:          #7DCEA0;
+    --color-azul:           #3498DB;
+    --color-blancomedico:   #F2F8F4;
+}
+
+body {
+    font-family: 'Gentium Book Basic', serif;
+}
+
+
+
+/* HEADER */
+.header{
+    background-color: var(--color-blancomedico);
+}
+.header_inicio {
+    /* background-color: var(--color-blancomedico); */
+    background-image: linear-gradient(to top right,#f2f8f468,#f2f8f49d ), url(/clinica/build/img/header_inicio.jpg);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+    
+.eslogan{
+    text-align: center;
+    font-style: italic;
+    padding: 50px;
+    color: var(--color-verde-oscuro);
+    justify-self: center;
+    align-self:center;
+    border-bottom: solid var(--color-gris-verdoso);
+}
+.navbar{
+    
+    display: flex;
+    justify-content:space-evenly;
+    /* align-items:center;  */
+}
+.logo img{
+    width: 400px;
+    animation: girarY 3s;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.menu_item{
+    color: var(--color-verde-oscuro);
+    text-decoration: none;
+    /* display: inline-block;  */
+    font-weight: bold;
+    font-size: large;
+    padding: 20px;    
+
+}
+
+#btn_menu{
+    display: none;
+}  
+
+.menu_item:hover{
+    border-bottom: solid var(--color-gris-verdoso);      
+}
+/* FOOTER */
+.footer{
+    background-color: var(--color-gris-verdoso);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-gris);
+}
+.footer_menu{
+    display: flex;
+}
+.footer_item{
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: none;
+    padding: 20px;   
+    text-align: center;
+}
+.footer_estudiante{
+    padding: 10px;
+    font-style: italic;    
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.footer_fecha{
+    font-size: large;
+    font-weight: bold;
+}
+.footer_item:hover{
+    color: var(--color-blancomedico);
+}
+.footer_estudiante p:hover{
+    animation: girarX 1s  ;
+}
+
+@keyframes girarX {
+    0% {transform: rotateX(0deg);}
+    100% {transform: rotateX(360deg);}
+  }
+@keyframes girarY {
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
+  }
+
+.btn{
+    width: 150px;
+}
+
+
+/* HACIENDO LA PAGINA RESPONSIVE */
+@media screen and (max-width: 1200px){
+    header{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: var(--color-blancomedico);  
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1000;
+        transition: all 300ms;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 40px;
+        list-style: none; 
+        padding: 0; 
+        gap: 10px; 
+
+    }
+
+    .menu_item {
+        color: var(--color-verde-oscuro);
+    }
+
+    #back_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        display: none;
+    }
+
+
+    #btn_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    #btn_menu:hover{
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+
+}

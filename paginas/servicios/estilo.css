@@ -1,0 +1,125 @@
+
+
+#col{
+    color: #F2F8F4;;
+    /* text-shadow: 1px 2px 2px black green seagreen springgreen; */
+    text-align: center;
+    font-size: 100px;
+    font-size: 6vw; /**/
+}
+div.ga{
+    margin: 20px 5px;
+    box-shadow: 0 4px 8px 0 lightgreen, 0 6px 20px 0 rgba(0, 0, 0, 19);
+   
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(0,1fr);
+    background-color:antiquewhite;
+    border-radius: 6px;
+    cursor: pointer;
+}
+div.ga img{
+    width: 100%;
+    height: auto;
+}
+div.ga:hover{
+    border: 1px solid slategray;
+    transform: rotate(-3deg);
+}
+div.pie{
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    
+}
+div.cont{
+    
+    color: rgb(0, 0, 0);
+   top: 0;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    
+    color: rgb(43, 42, 42);
+    opacity: 1;
+    
+    text-align: center;
+}
+div.cont:hover > .cont{
+    opacity: 1;
+    visibility: hidden;
+}
+div.contenedorServicio{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*repeat(4,1fr)*/
+    /*background-image: url(/clinica/paginas/servicios/img/logo.jpeg);*/
+    background-position: center;
+    background-attachment: fixed;
+}
+#ini{
+    position: relative;
+    min-height: 80vh;
+   
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+    
+}
+.cap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:cadetblue;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    
+}
+.prim{
+    padding-top: 20vh; /*350px*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:initial; /*initial*/
+    /* width: 60%; */
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    #col {
+        font-size: 10vw; 
+    }
+
+    div.ga {
+        width: 90%; 
+    }
+
+    .prim {
+        padding-top: 10vh; 
+    }
+}
+
+
+
+ 
+  
+
+
+
+
+

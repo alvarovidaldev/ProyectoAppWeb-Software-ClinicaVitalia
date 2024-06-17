@@ -1,0 +1,207 @@
+:root {
+    --color-azul-claro:     #5DADE2;
+    --color-blanco:         #FFFFFF;
+    --color-gris-verdoso:   #2C3E50;
+    --color-gris:           #779394;
+    --color-verde-azul:     #065f7f;
+    --color-verde-oscuro:   #10af92;
+    --color-verde:          #7DCEA0;
+    --color-azul:           #3498DB;
+    --color-blancomedico:   #F2F8F4;
+}
+.fondo{
+   background-color: var(--color-blancomedico);
+}
+
+
+.service {
+    background: url(/clinica/paginas/especialidad/img/fondo.jpg);
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: #2a2a2a;*/
+    opacity: 1;
+    margin-top: 0px;
+}
+
+.service h2 {
+    font-size: 90px;
+    color: #090909;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+.service h4 {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 70px;
+    display: block;
+}
+.single-service-img {
+    width: 205px;
+    height: 125px;
+    background: #f9f9f9;
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+}
+.single-service-img:before {
+    content: "";
+    position: absolute;
+    top: -42px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 102px solid transparent;
+    border-right: 104px solid transparent;
+    border-bottom: 42px solid #fff;
+}
+.single-service-img:after {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 102px solid transparent;
+    border-right: 102px solid transparent;
+    border-top: 42px solid #fff;
+    z-index: 10;
+}
+.service-img {
+    width: 200px;
+    height: 123px;
+    background: #3a9ecb;
+    position: relative;
+    top: 1px;
+    left: 2px;
+}
+.service-img:before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 40px solid #3a9ecb;
+}
+.service-img:after {
+    content: "";
+    position: absolute;
+    bottom: -39px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 40px solid #3a9ecb;
+    z-index: 999;
+}
+.single-service h3 {
+    margin-top: 60px;
+    color: #050505;
+    padding-bottom: 90px;
+}
+.service-img img.heart {
+    left: 20%;
+    top: 18%;
+}
+.service-img img.brain {
+    left: 26%;
+    top: 11%;
+}
+.service-img img.knee {
+    left: 38%;
+}
+.service-img img.bone {
+    left: 25%;
+    top: 14%;
+}
+.service-img img {
+    position: absolute;
+}
+
+.about-img img {
+    width: 100%;
+    
+}
+.single-about-detail {
+    position: relative;
+}
+
+.about-details {
+    background: #2a2a2a;
+    border-top: 2px solid #fff;
+    transition: all .7s ease 0s;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+}
+.about-details h3 {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 0;
+}
+.about-details p {
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 25px;
+    padding-bottom: 30px;
+    
+}
+.single-about-detail:hover .about-details {
+    background: #3a9dca;
+}
+
+
+.single-member {
+    margin: 0;
+    padding: 0;
+}
+.person img {
+    width: 100%;
+}
+.person-detail {
+    padding: 10px;
+    background: #3a9cc8;
+    position: relative;
+    transition: all .7s ease 0s;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+}
+
+
+.person-detail h3 {
+    font-size: 30px;
+    color: #fff;
+}
+.person-detail p {
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.single-member:hover .person-detail {
+    background: #2a2a2a;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .service h2 {
+        font-size: 50px; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+    }
+}
+
+/* Consulta de medios para pantallas aún más pequeñas */
+@media screen and (max-width: 576px) {
+    .service h2 {
+        font-size: 50px; /* Tamaño de fuente aún más pequeño para pantallas más pequeñas */
+    }
+}
+

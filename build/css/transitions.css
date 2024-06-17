@@ -1,0 +1,14 @@
+/* En tu archivo CSS transitions.css */
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    /* backdrop-filter: blur(10px);  */
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+
+
+

@@ -1,0 +1,226 @@
+:root {
+    --color-azul-claro:     #5DADE2;
+    --color-blanco:         #FFFFFF;
+    --color-gris-verdoso:   #2C3E50;
+    --color-gris:           #779394;
+    --color-verde-azul:     #065f7f;
+    --color-verde-oscuro:   #10af92;
+    --color-verde:          #7DCEA0;
+    --color-azul:           #3498DB;
+    --color-blancomedico:   #F2F8F4;
+}
+
+.Acerca-de {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(/clinica/paginas/acercade/image/clinica2.jpg);
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+
+.acerca-de {
+    text-align: center;
+}
+
+.acerca-1 h3{
+    color: rgb(1, 1, 1);
+}
+
+.acerca-1 p{
+    color: var(--color-gris-verdoso);
+}
+
+
+.acerca-de h1 {
+    font-size: 100px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+
+/* acerca de */
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #0d0c0f;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-acerca{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-acerca img{
+    width: 40%;
+}
+
+.checklist-acerca{
+    width: 45%;
+}
+
+.acerca{
+    margin-bottom: 20px;
+}
+
+.n-acerca{
+    margin-bottom: 7px;
+    color: #ffffff;
+}
+
+
+.txt-a {
+    font-size: 28px;
+    color: #414247;
+    margin-bottom: 35px;
+}
+
+
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #c73030 0%, #e2dce1 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+
+
+
+.gallery-acerca{
+    background: #f2f2f2;
+}
+
+.contenedor-galeriacerca{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imgacerca-gallery{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:800px){
+    
+    
+    .contenedor-acerca img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    
+    .checklist-acerca{
+        width: 80%;
+    }
+    
+    .n-acerca{
+        margin-bottom: 30px;
+    }
+    
+    .agregar-imagen{
+        width: 80%;
+    }
+    
+    .imgacerca-gallery{
+        width: 45%;
+    }
+    
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    
+    .social-media-icon{
+        margin-left: 0;
+    }
+    
+    .social-media i{
+        margin-left: 0;
+    }
+    
+    }
+    
+    @media screen and (max-width:500px){
+    
+    .subtitulo{
+        font-size: 30px;
+    }
+    
+    .agregar-imagen{
+        width: 95%;
+    }
+    
+    .imgacerca-gallery{
+        width: 95%;
+    }
+    
+    .social-media{
+        width: 100%;
+    }
+     
+ }
+
+
